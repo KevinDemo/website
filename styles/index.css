@@ -1,0 +1,106 @@
+/*Start fix menu*/
+/*OPPSETT AV TOP, TOPNAV, SIDENAV, MAIN, RIGHT OG FOOTER:*/
+.top {
+position:relative;
+background-color:red;
+height:68px;
+padding-top:20px;
+line-height:50px;
+overflow:hidden;
+z-index:2;
+}
+/*End fix menu*/
+.container{
+	background-color: #333;
+	height: 60px;
+	width: 100%;
+	position: relative;
+	min-height: 2500px;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	left:0; /* user left and right to fix it when the position changed to fixed;*/
+	right: 0;
+}
+
+.menu{
+	height: 60px;
+	line-height: 60px;
+	float: left;
+}
+
+
+.all-nav{
+	float: left;
+	padding: 0 20px;
+	color: #fff;
+	cursor: default;
+	text-align: center;
+}
+
+.all-nav:hover{
+	background-color: #00c1de;
+}
+
+
+.dbl-icon-base-gegduo:before{
+	content: '\e608';
+}
+
+.common-topbar-body, 
+.common-topbar-bottom, 
+.common-topbar-nav,
+.all-nav ,
+.more-icon{
+	padding-right: 10px;
+}
+
+[class^="dbl-icon-base-"], [class*=" dbl-icon-base-"]{
+	font-family: "dbl-icon-base" !important;
+}
+
+[class^="dbl-icon-"], [class*=" dbl-icon-"]{
+	speak:none;
+	font-style: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing:antialiased;
+}
+
+*,:after,:before,html {
+    box-sizing: content-box
+}
+
+.common-topbar-nav-list li {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 16px;
+    position: relative
+}
+
+.common-topbar-nav-list li a:link{
+	color: #fff;
+	cursor: pointer	;
+}
+
+.common-topbar-nav-list li a:hover{
+	color: #00c1de;
+}
+
+.common-topbar-nav-list .line {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 115px;
+    bottom: 0;
+    background: #00c1de;
+    transition: width .3s cubic-bezier(.4,0,.2,1)
+}
+
+.common-topbar-nav-list li a:hover ~ .line{
+  transition: all .2s cubic-bezier(.4,0,.2,1)
+}
+
